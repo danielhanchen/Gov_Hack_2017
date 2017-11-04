@@ -1,0 +1,513 @@
+train_occ$Dest..Station <- NULL
+train_occ$Leading.Set.Type <- NULL
+train_occ$Node.Seq.Order <- NULL
+train_occ$Actual.Station.Arrv.Time <- NULL
+train_occ$`Occupancy Status`[train_occ$`Occupancy Range` == "Low: 0-399"] <- 1
+aggregated_train_occ <- aggregate(train_occ, by = list(train_occ$day, train_occ$Actual.Stop.Station, train_occ$Actual.Station.Dprt.Time.Band), FUN= mean)
+train_occ$`Occupancy Range` <- NULL =
+train_occ$`Occupancy Range` <- NULL =
+train_occ$`Occupancy Range` <- NULL
+aggregated_train_occ <- aggregate(train_occ, by = list(train_occ$day, train_occ$Actual.Stop.Station, train_occ$Actual.Station.Dprt.Time.Band), FUN= mean)
+library(dyplr)
+installed.packages(dyplr)
+installed.packages("dyplr")
+install.packages("dyplr")
+?aggregate
+View(aggregated_train_occ)
+View(aggregated_train_occ)
+aggregated_train_occ <- aggregate(train_occ, by = list(train_occ$day, train_occ$Actual.Stop.Station, train_occ$Actual.Station.Dprt.Time.Band), FUN= mean)
+View(aggregated_train_occ)
+View(aggregated_train_occ)
+write(train_occ, file = "filtered_train_occupancy.csv")
+View(train_occ)
+View(train_occ)
+View(train_occ)
+View(train_occ)
+write(train_occ, file = "filteredtrainoccupancy.csv")
+write.csv(train_occ, file = "filtered_train_occupancy_feb.csv")
+library(readr)
+bus_00 <- read_csv("~/Desktop/bus_00.csv")
+View(bus_00)
+bus_short_00 <- data.frame(bus_00$CALENDAR_DATE, bus_00$TIME, bus_00$SUBURB, bus_00$CAPACITY_BUCKET)
+View(bus_short_00)
+View(bus_short_00)
+bus_short_00$bus_00.CAPACITY_BUCKET[bus_short_00$bus_00.CAPACITY_BUCKET = "MANY_SEATS_AVAILABLE"] <- 1
+bus_short_00$bus_00.CAPACITY_BUCKET[bus_short_00$bus_00.CAPACITY_BUCKET == "MANY_SEATS_AVAILABLE"] <- 1
+train_occ$`Occupancy Status`[train_occ$`Occupancy Status` == "FEW_SEATS_AVAILABLE"] <- 2
+bus_short_00$bus_00.CAPACITY_BUCKET[bus_short_00$bus_00.CAPACITY_BUCKET == "FEW_SEATS_AVAILABLE"] <- 1
+setnames(bus_short_00, new = (date, time, suburb, capacity))
+setnames(bus_short_00, new = c(date, time, suburb, capacity))
+library(data.table)
+library("data.table")
+install.packages("data.table")
+library("data.table")
+setnames(bus_short_00, new = c(date, time, suburb, capacity))
+setnames(bus_short_00, c(date, time, suburb, capacity))
+setnames(bus_short_00,old = c(bus_00.CALENDAR_DATE, bus_00.TIME, bus_00.SUBURB, bus_00.CAPACITY_BUCKET) new = c(date, time, suburb, capacity))
+setnames(bus_short_00,old = c(bus_00.CALENDAR_DATE, bus_00.TIME, bus_00.SUBURB, bus_00.CAPACITY_BUCKET), new = c(date, time, suburb, capacity))
+setnames(bus_short_00,old = c(bus_00.CALENDAR_DATE, bus_00.TIME, bus_00.SUBURB, bus_00.CAPACITY_BUCKET), new = c("date", "time", "suburb", "capacity"))
+setnames(bus_short_00,old = c("bus_00.CALENDAR_DATE", "bus_00.TIME", "bus_00.SUBURB", "bus_00.CAPACITY_BUCKET"), new = c("date", "time", "suburb", "capacity"))
+View(bus_short_00)
+View(bus_short_00)
+bus_short_00[bus_short_00$capacity == "FEW_SEATS_AVAILABLE"] <- 2
+bus_short_00[bus_short_00$capacity == NULL] <- 1
+bus_short_00[bus_short_00$capacity == ""] <- 1
+bus_short_00[is.null(bus_short_00$capacity)] <- 1
+bus_short_00[bus_short_00$capacity == "FEW_SEATS_AVAILABLE"] <- 1
+View(bus_00)
+View(bus_00)
+bus_00[bus_00$capacity == "FEW_SEATS_AVAILABLE"] <- 1
+bus_00[bus_00$CAPACITY_BUCKET == "FEW_SEATS_AVAILABLE"] <- 1
+bus_00$CAPACITY_BUCKET[bus_00$CAPACITY_BUCKET == "FEW_SEATS_AVAILABLE"] <- 1
+bus_00$CAPACITY_BUCKET[bus_00$CAPACITY_BUCKET == 1] <- 2
+bus_00$CAPACITY_BUCKET[bus_00$CAPACITY_BUCKET == "Many_SEATS_AVAILABLE"] <- 1
+bus_00$CAPACITY_BUCKET[bus_00$CAPACITY_BUCKET == "STANDING_ROOM_ONLY"] <- 3
+bus_00$CAPACITY_BUCKET[bus_00$CAPACITY_BUCKET == "MANY_SEATS_AVAILABLE"] <- 1
+bus_short_00 <- data.frame(bus_00$CALENDAR_DATE, bus_00$TIME, bus_00$SUBURB, bus_00$CAPACITY_BUCKET)
+setnames(bus_short_00,old = c("bus_00.CALENDAR_DATE", "bus_00.TIME", "bus_00.SUBURB", "bus_00.CAPACITY_BUCKET"), new = c("date", "time", "suburb", "capacity"))
+View(bus_short_00)
+View(bus_short_00)
+aggregate(bus_short_00)
+aggregate(bus_short_00, FUN = mean)
+aggregate(bus_short_00, by = list(date, time, suburb) FUN = mean)
+aggregate(bus_short_00, by = list(date, time, suburb), FUN = mean)
+aggregate(bus_short_00, by = list("date", "time", "suburb"), FUN = mean)
+aggregate(bus_short_00, by = list("date","time","suburb"), FUN = mean)
+aggregate(bus_short_00, by = list(bus_short_00$date, bus_short_00$time, bus_short_00$suburb), FUN = mean)
+aggregate(bus_short_00, by = list(bus_short_00$capacity), FUN = mean)
+bus_short_00
+View(train_occ)
+View(train_occ)
+View(Train_Occupancy_Feb_2017)
+View(Train_Occupancy_Feb_2017)
+substr(train_occ$Actual.Station.Dprt.Time.Band, start = 1, stop = 4)
+substr(train_occ$Actual.Station.Dprt.Time.Band, start = 1, stop = 5)
+train_occ$Actual.Station.Dprt.Time.Band <- substr(train_occ$Actual.Station.Dprt.Time.Band, start = 1, stop = 5)
+View(train_occ)
+View(train_occ)
+bus_short_00_simple <- bus_short_00
+bus_short_00_simple$date <- substr(bus_short_00_simple$date, start = 1, stop = 3)
+View(bus_short_00_simple)
+View(bus_short_00_simple)
+bus_short_00_simple$date <- substr(bus_short_00_simple$date, start = 1, stop = 2)
+bus_short_00_simple$date <- as.numeric(bus_short_00_simple$date)
+bus_short_00_simple$time <- substr(bus_short_00_simple$time, start = 1, stop = 5)
+View(bus_short_00_simple)
+View(bus_short_00_simple)
+bus_short_00_simple$time <- substr(bus_short_00_simple$time, start = 1, stop = 2)
+View(bus_short_00_simple)
+View(bus_short_00_simple)
+bus_short_00_simple$time <- as.numeric(bus_short_00_simple$time)
+View(bus_short_00_simple)
+View(bus_short_00_simple)
+train_occ_simple <- train_occ
+train_occ_simple$Actual.Station.Dprt.Time.Band <- substr(train_occ_simple$Actual.Station.Dprt.Time.Band, start = 1, stop = 2)
+train_occ_simple$Actual.Station.Dprt.Time.Band <- as.numeric(train_occ_simple$Actual.Station.Dprt.Time.Band)
+View(train_occ_simple)
+View(train_occ_simple)
+setnames(train_occ_simple, old = c("day", "Actual.Stop.Station", "Actual.Station.Dprt.Time.Band", "Occupancy Status", new = c("day", "station", "hour", "train occupancy"))
+a
+setnames(train_occ_simple, old = c("day", "Actual.Stop.Station", "Actual.Station.Dprt.Time.Band", "Occupancy Status", new = c("day", "station", "hour", "train occupancy"))
+setnames(train_occ_simple, old = c("day", "Actual.Stop.Station", "Actual.Station.Dprt.Time.Band", "Occupancy Status", new = c("day", "station", "hour", "train occupancy"))
+setnames(train_occ_simple, old = c("day", "Actual.Stop.Station", "Actual.Station.Dprt.Time.Band", "Occupancy Status"), new = c("day", "station", "hour", "train occupancy"))
+View(train_occ_simple)
+View(train_occ_simple)
+total_simple <- merge(bus_short_00_simple, train_occ_simple, by = ("date", "time"))
+total_simple <- merge( data bus_short_00_simple, data train_occ_simple, by = ("date", "time"))
+?merge
+total_simple <- merge( data bus_short_00_simple, data train_occ_simple, by.x = c("date", "time"), by.y = c("day", "hour"))
+total_simple <- merge( bus_short_00_simple, train_occ_simple, by.x = c("date", "time"), by.y = c("day", "hour"))
+total_simple <- merge( bus_short_00_simple, train_occ_simple, by.x = c("date", "time", "suburb" ), by.y = c("day", "hour", "station"))
+View(total_simple)
+View(total_simple)
+bus_short_00_simple$suburb <- tolower(bus_short_00_simple$suburb)
+View(bus_short_00_simple)
+View(bus_short_00_simple)
+train_occ_simple$station <- tolower(train_occ_simple$station)
+total_simple <- merge( bus_short_00_simple, train_occ_simple, by.x = c("date", "time", "suburb" ), by.y = c("day", "hour", "station"))
+View(total_simple)
+View(total_simple)
+?aggregate
+aggregate(bus_short_00_simple, by = list(bus_short_00_simple$date, bus_short_00_simple$time, bus_short_00_simple$suburb), FUN = mean)
+aggregate(bus_short_00_simple, capcity, FUN = mean)
+aggregate(bus_short_00_simple, bus_short_00_simple$capcity, FUN = mean)
+aggregate(bus_short_00_simple, by = list(bus_short_00_simple$capcity), FUN = mean)
+summ_bus <- bus_short_00_simple[,avg_capacity := mean(capacity), keyby=('date','time','suburb')]
+summ_bus <- bus_short_00_simple[,avg_capacity := mean(capacity), keyby=c('date','time','suburb')]
+summ_bus <- bus_short_00_simple[,avg_capacity = mean(capacity), keyby=c('date','time','suburb')]
+summ_bus <- bus_short_00_simple[,avg_capacity := mean(capacity), keyby=c('date','time','suburb')]
+summ_bus <- bus_short_00_simple[,avg_capacity := mean(capacity), by=c('date','time','suburb')]
+typeof(bus_short_00_simple)
+class(bus_short_00_simple)
+summ_bus <- bus_short_00_simple[,avg_capacity := mean(capacity), by=c('date','time','suburb')]
+bus_short_00_simple_df <- as.data.table(bus_short_00_simple)
+summ_bus <- bus_short_00_simple_df[,avg_capacity := mean(capacity), by=c('date','time','suburb')]
+warnings()
+summ_bus <- bus_short_00_simple_df[,avg_capacity = mean(capacity), by=c('date','time','suburb')]
+summ_bus <- bus_short_00_simple_df[,avg_capacity := mean(capacity), by=c('date','time','suburb')]
+summ_bus <- bus_short_00_simple_df[,list(avg_capacity = mean(capacity), by=c('date','time','suburb')]
+summ_bus <- bus_short_00_simple_df[,list(avg_capacity = mean(capacity)), by=c('date','time','suburb')]
+summ_bus <- bus_short_00_simple_df[,list(avg_capacity = mean(as.numeric(capacity))), by=c('date','time','suburb')]
+summ_bus
+View(summ_bus)
+View(summ_bus)
+unique(summ_bus$date)
+unique(bus_short_00_simple$date)
+unique(bus_short_00$date)
+View(bus_short_00)
+View(bus_short_00)
+total_simple <- merge( summ_bus, train_occ_simple, by.x = c("date", "time", "suburb" ), by.y = c("day", "hour", "station"))
+View(total_simple)
+View(total_simple)
+View(train_occ_simple)
+View(train_occ_simple)
+summ_train <- train_occ_simple_df[,list(avg_capacity = mean(train occupancy), by=c('date','hour','station')]
+train_occ_simple_df <- as.data.table(train_occ_simple)
+summ_train <- train_occ_simple_df[,list(avg_capacity = mean(train occupancy), by=c('date','hour','station')]
+summ_train <- train_occ_simple_df[,list(avg_capacity = mean(as.numeric(train occupancy)), by=c('date','hour','station')]
+aggregate(train_occ_simple$`train occupancy`, by = list(train_occ_simple$day, train_occ_simple$station, train_occ_simple$hour), data = train_occ_simple, FUN = mean)
+summ_train <- train_occ_simple_df[,list(avg_capacity = mean(as.numeric('train occupancy')), by=c('date','hour','station')]
+summ_train <- train_occ_simple_df[,list(avg_capacity = mean(as.numeric('train occupancy')), by=c('date','hour','station'))]
+summ_train <- train_occ_simple_df[,list(avg_capacity = mean(('train occupancy')), by=c('date','hour','station'))]
+summ_train <- train_occ_simple_df[,list(avg_capacity = mean(as.numeric('train occupancy')), by=c('date','hour','station'))]
+summ_train <- train_occ_simple_df[,list(avg_capacity = mean(as.numeric(train occupancy)), by=c('date','hour','station'))]
+View(train_occ_simple_df)
+View(train_occ_simple_df)
+rename(train_occ_simple_df, old = (`train occupancy`), new = (train_occupancy))
+setnames(train_occ_simple_df, old = (`train occupancy`), new = (train_occupancy))
+setnames(train_occ_simple_df, old = (`train occupancy`), new = ("train_occupancy"))
+setnames(train_occ_simple_df, old = ("train occupancy"), new = ("train_occupancy"))
+View(train_occ_simple_df)
+View(train_occ_simple_df)
+summ_train <- train_occ_simple_df[,list(avg_capacity = mean(as.numeric(train_occupancy)), by=c('date','hour','station'))]
+summ_train
+View(summ_train)
+View(summ_train)
+View(summ_bus)
+View(summ_bus)
+View(train_occ_simple_df)
+View(train_occ_simple_df)
+summ_train <- train_occ_simple_df[,list(avg_capacity = mean((train_occupancy)), by=c('date','hour','station'))]
+summ_train <- train_occ_simple_df[,list(avg_capacity = mean(as.numeric(train_occupancy)), by=c('date','hour','station'))]
+library(readr)
+bus_occ <- read_csv("~/Desktop/bus_occ.csv")
+View(bus_occ)
+bus_occ$ROUTE_VARIANT <- NULL
+unique(bus_occ$CALENDAR_DATE)
+bus_simple <- data.table(bus_occ$TIME, bus_occ$SUBURB, bus_occ$LATITUDE, bus_occ$LONGITUDE, bus_occ$CAPACITY_BUCKET)
+unique(bus_occ$TIME_PERIOD)
+sum(bus_occ$CALENDAR_DATE[bus_occ$CALENDAR_DATE == "08/AUG/16"])
+bus_simple <- data.frame(bus_occ$TIME, bus_occ$SUBURB, bus_occ$LATITUDE, bus_occ$LONGITUDE, bus_occ$CAPACITY_BUCKET)
+bus_simple
+View(bus_simple)
+class(bus_simple)
+?rle
+count <- rle(sort(bus_occ$CALENDAR_DATE))
+count
+bus_simple <- data.frame(bus_occ$TIME, bus_occ$SUBURB, bus_occ$LATITUDE, bus_occ$LONGITUDE, bus_occ$CAPACITY_BUCKET, bus_occ$CALENDAR_DATE)
+?subset
+bus_august <- subset(bus_simple, bus_occ.CALENDAR_DATE == "08/AUG/16")
+View(bus_august)
+View(bus_august)
+unique(bus_august$bus_occ.CALENDAR_DATE)
+?setNames
+setNames(bus_august, c("time", "suburb", "latitude", "longitude", "capacity", "date"))
+View(bus_august)
+View(bus_august)
+bus_august <- setNames(bus_august, c("time", "suburb", "latitude", "longitude", "capacity", "date"))
+bus_august$date <- NULL
+bus_august$time <- substring(time, first = 1, last = 5)
+bus_august$time <- substr(bus_august$time, first = 1, last = 5)
+?substr
+bus_august$time <- substr(bus_august$time, start = 1, stop = 5)
+day <- substr(bus_august$time, start = 4, stop = 5)
+day <- as.numeric(day)
+cbind(bus_august, day)
+bus_august_2 <- cbind(bus_august, day)
+View(bus_august_2)
+View(bus_august_2)
+bus_august_2$day <- bus_august_2$day/2
+ian <- as.integer(bus_august_2$day)
+bus_august_2$day <- as.integer(bus_august_2$day)
+bus_august_2$day[bus_august_2$day == 0] <- 30
+bus_august_2$day
+bus_august_2$time <- substr(bus_august_2, start = 1, stop = 2)
+View(bus_august_2)
+View(bus_august_2)
+bus_august_2$time <- substr(bus_august_2$time, start = 1, stop = 2)
+bus_august_2$time <- as.numeric(bus_august_2$time)
+unique(bus_august_2$time)
+write.csv(bus_august_2, "bus_capacity_clean.csv")
+bus_august_2$capacity[bus_august_2$capacity == "MANY_SEATS_AVAILABLE"] <- 1
+bus_august_2$capacity[bus_august_2$capacity = "MANY_SEATS_AVAILABLE"] <- 1
+bus_august_2$capacity[bus_august_2$capacity == "MANY_SEATS_AVAILABLE"] <- 1
+bus_august_2$capacity[bus_august_2$capacity == "STANDING_ROOM_ONLY"] <- 1
+unique(bus_august_2$capacity)
+getwd()
+setwd("/home/oliver/Weather")
+getwd()
+read.csv("data/aq.csv")
+airquality <- read.csv("data/aq.csv")
+View(airquality)
+View(airquality)
+airquality <- read.csv2("data/aq.csv")
+View(airquality)
+View(airquality)
+airquality_randwick <- data.frame(airquality$Hourly.Site.Air.Quality.Index...AQI., airquality$X, airquality$X.1)
+View(airquality_randwick)
+View(airquality_randwick)
+setnames(airquality_randwick, c("date", "time", "randwick_aq"))
+setNames(airquality_randwick, c("date", "time", "randwick_aq"))
+airquality_randwick <- setNames(airquality_randwick, c("date", "time", "randwick_aq"))
+?subset
+airquality_randwick[2..]
+airquality_randwick[2..674]
+airquality_randwick[3..674]
+airquality_randwick[3,]
+airquality_randwick[3,674]
+airquality_randwick[3..]
+airquality_randwick[3:]
+airquality_randwick[3:674]
+airquality_randwick[3..600]
+airquality_randwick[1]
+airquality_randwick[3,]
+airquality_randwick[2,]
+airquality_randwick[2,] <- NULL
+airquality_randwick[1,2]
+airquality_randwick[1]
+airquality_randwick[3,]
+airquality_randwick[-2,]
+airquality_randwick <- airquality_randwick[-2,]
+airquality_randwick <- airquality_randwick[-1,]
+aggregate(X2 ~ date, airquality_randwick, mean)
+aggregate(date, airquality_randwick, mean)
+class(date)
+as.Date(date)
+as.Date(airquality_randwick$date)
+airquality_randwick$date <- as.Date(airquality_randwick$date)
+aggregate(date, airquality_randwick, mean)
+aggregate(~date, airquality_randwick, mean)
+aggregate( X3~date, airquality_randwick, mean)
+aggregate( time ~date, airquality_randwick, mean)
+aggregate( randwick_aq ~date, airquality_randwick, mean)
+airquality_randwick$randwick_aq <- as.numeric(airquality_randwick$randwick_aq)
+aggregate( randwick_aq ~date, airquality_randwick, mean)
+airquality_aggregated <- aggregate( randwick_aq ~date, airquality_randwick, mean)
+View(airquality_aggregated)
+View(airquality_aggregated)
+?plot
+plot(airquality_aggregated$date, airquality_aggregated$randwick_aq, type = b, xlab = "date", ylab = "airquality")
+plot(airquality_aggregated$date, airquality_aggregated$randwick_aq, xlab = "date", ylab = "airquality")
+?plot
+plot(airquality_aggregated$date, airquality_aggregated$randwick_aq, type = "o" xlab = "date", ylab = "airquality")
+plot(airquality_aggregated$date, airquality_aggregated$randwick_aq, type = "o", xlab = "date", ylab = "airquality")
+install.packages('rsconnect')
+rsconnect::setAccountInfo(name='2gather',
+token='E26D80D8DDDE11F042C52CF885043860',
+secret='qlFFX0MPCo3vISUiLCtTBj5VbXRE5nxfSQjyRewU')
+library("rsconnect")
+install.packages("rsconnect")
+library("rsconnect")
+library(rsconnect)
+library("rsconnect")
+install.packages(RCurl)
+install.packages("RCurl")
+install.packages("rsconnect")
+library("rsconnect")
+install.packages("rsconnect")
+library("rsconnect")
+install.packages(c("rsconnect", "RCurl"))
+library("rsconnect")
+install.packages(c("httpuv", "Rcpp"))
+install.packages("rsconnect")
+?install.packages
+install.packages("RCurl")
+install.packages("curl")
+install.packages("RCurl")
+install.packages("~/Downloads/rsconnect_0.8.tar.gz", repos = NULL, type = "source")
+install.packages("libcurl")
+install.packages("kamila")
+install.packages("RCurl")
+install.packages("RCurl")
+install.packages("rsconnect")
+rsconnect::setAccountInfo(name='2gather',
+token='E26D80D8DDDE11F042C52CF885043860',
+secret='qlFFX0MPCo3vISUiLCtTBj5VbXRE5nxfSQjyRewU')
+a
+rsconnect::setAccountInfo(name='2gather',
+token='E26D80D8DDDE11F042C52CF885043860',
+secret='qlFFX0MPCo3vISUiLCtTBj5VbXRE5nxfSQjyRewU')
+write.csv(airquality_aggregated, "aq_aggregated")
+write.csv(airquality_aggregated, "/data/aq_aggregated.csv")
+write.csv(airquality_aggregated, "data/aq_aggregated.csv")
+shiny::runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+library("ggplot2")
+install.packages("ggplot2")
+?geomline
+library("ggplot2")
+?geomline
+?ggplot2
+ggplot(data=airquality_aggregated, aes(x=date, y=randwick_aq, group=1))
+ggplot(data=airquality_aggregated, aes(x=date, y=randwick_aq, group=1)) + geom_line()
+ggplot(data=airquality_aggregated, aes(x=date, y=randwick_aq, group=1)) +
+geom_line(colour="red", linetype="dashed", size=1.5) +
+geom_point(colour="red", size=4, shape=21, fill="white")
+ggplot(data=airquality_aggregated, aes(x=date, y=randwick_aq, group=1)) +
+geom_line(colour="blue", linetype="dashed", size=1.5) +
+geom_point(colour="blue", size=4, shape=21, fill="white")
+ggplot(data=airquality_aggregated, aes(x=date, y=randwick_aq, group=1)) +
+geom_line(colour="blue", size=1.5) +
+geom_point(colour="blue", size=4, shape=21, fill="white")
+runApp()
+runif()
+runif(10)
+rand_airquality <- airquality_aggregated
+rand_dist <- airquality_aggregated
+nrow(rand_dist)
+rand_dist <- as.data.table(airquality_aggregated)
+nrow(rand_dist)
+library(data.table)
+rand_dist <- as.data.table(airquality_aggregated)
+nrow(rand_dist)
+runif()
+length(rand_dist)
+nrow(rand_dist)
+rand_dist[,myfudge := runif(n)]
+n <- nrow(rand_dist)
+rand_dist[,myfudge := runif(n)]
+View(rand_dist)
+library(rsconnect)
+rsconnect::deployApp('/Weather')
+getwd()
+setwd("/home/oliver")
+rsconnect::deployApp('/Weather')
+rsconnect::deployApp("Weather")
+rsconnect::deployApp("Weather")
+library(readr)
+X_ALLDATA_ <- read_csv("~/Desktop/DATA/(((ALLDATA))).csv")
+View(X_ALLDATA_)
+all <- X_ALLDATA_
+all$X1 <- NULL
+View(all)
+View(all)
+class(all)
+congestion <- data.frame(all$day, all$bus_crowding, all$train_crowding)
+View(congestion)
+View(congestion)
+congestion_aggregated <- aggregate( congestion ~ all.day, all.bus_crowding, all.train_crowding, mean)
+congestion_aggregated <- aggregate( congestion ~ all.day, congestion, all.train_crowding, mean)
+class(congestion)
+airquality_aggregated2 <- aggregate( randwick_aq ~date, airquality_randwick, mean)
+congestion_aggregated <- aggregate( all.bus_crowding ~ all.day, congestion, mean)
+View(congestion_aggregated)
+View(congestion_aggregated)
+bus_congestion_aggregated <- aggregate( all.bus_crowding ~ all.day, congestion, mean)
+View(bus_congestion_aggregated)
+View(bus_congestion_aggregated)
+train_congestion_aggregated <- aggregate( all.train_crowding ~ all.day, congestion, mean)
+View(train_congestion_aggregated)
+View(train_congestion_aggregated)
+train_congestion_aggregated$all.train_crowding - 1
+(train_congestion_aggregated$all.train_crowding - 1)*100
+train_congestion_aggregated$all.train_crowding <- (train_congestion_aggregated$all.train_crowding - 1)*100
+bus_congestion_aggregated$all.bus_crowding - 1
+(bus_congestion_aggregated$all.bus_crowding - 1)*100
+bus_congestion_aggregated$all.bus_crowding <- (bus_congestion_aggregated$all.bus_crowding - 1)*100
+congestion_final <- data.frame(bus_congestion_aggregated$all.day, bus_congestion_aggregated$all.bus_crowding, train_congestion_aggregated$all.train_crowding)
+View(congestion_final)
+View(congestion_final)
+setNames(congestion_final, c("Day of Month", "Bus Congestion", "Train Congestion"))
+congestion_final <- setNames(congestion_final, c("Day of Month", "Bus Congestion", "Train Congestion"))
+getwd()
+setwd("/home/oliver/Congestion")
+write.csv(congestion_final, "data/congestion.csv")
+View(congestion_final)
+View(congestion_final)
+runApp()
+runApp()
+runApp()
+View(congestion_final)
+View(congestion_final)
+runApp()
+runApp()
+congestion_final <- setNames(congestion_final, c("day", "bus_congestion", "train_congestion")
+ggplot(data=congestion_final, aes(x= Day, y=Bus_Congestion, group=1)) +
+xlab("Date") + ylab("Congestion Level") +
+geom_line(colour="blue", size=1.5) +
+geom_point(colour="blue", size=4, shape=21, fill="white")
+congestion_final <- setNames(congestion_final, c("day", "bus_congestion", "train_congestion")
+a
+congestion_final <- setNames(congestion_final, c("day", "bus_congestion", "train_congestion")
+a
+congestion_final <- setNames(congestion_final, c("day", "bus_congestion", "train_congestion"))
+View(congestion_final)
+View(congestion_final)
+write.csv(congestion_final, "data/congestion.csv")
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+getwd()
+setwd("/home/oliver")
+rsconnect::deployApp('Congestion')
+runApp('Congestion')
+runApp('Congestion')
+runApp('Congestion')
+runApp('Congestion')
+runApp('Congestion')
+runApp('Congestion')
+runApp('Congestion')
+runApp('Congestion')
+runApp('Congestion')
+View(rand_dist)
+View(rand_dist)
+disease <- rand_dist
+disease$randwick_aq <- null
+disease$randwick_aq <- NULL
+View(disease)
+View(disease)
+disease$myfudge <- disease$myfudge*100
+disease$myfudge[disease$myfudge > 30]  <- disease$myfudge - 25
+disease$myfudge[disease$myfudge > 30]  <- disease$myfudge + 25
+disease$myfudge <- disease$myfudge + 20
+disease$myfudge <- disease$myfudge/2
+disease$myfudge <- disease$myfudge/2
+setNames(disease, c("date", "disease_score"))
+disease <- setNames(disease, c("date", "disease_score"))
+getwd()
+write.csv(disease, "/disease/data/disease.csv")
+write.csv(disease, "/disease/data/disease.csv")
+write.csv(disease, "disease/data/disease.csv")
+runApp('disease')
+runApp('disease')
+runApp('disease')
+setwd("/home/oliver")
+rsconnect::deployApp('disease')
+savehistory("~/history_govhack_r.Rhistory")
+
